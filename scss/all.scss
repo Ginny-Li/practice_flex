@@ -60,7 +60,10 @@
 
         a {
           color: #03ca9c;
-          font-weight: bold;
+        }
+        a:hover {
+          border-bottom: 3px solid #03ca9c;
+          padding: 0 12px 18px 12px;
         }
       }
     }
@@ -78,8 +81,7 @@
   }
 
   .content {
-    margin: 20px 0;
-
+    padding:50px 0;
     .course {
       display: flex;
       justify-content: space-around;
@@ -141,9 +143,10 @@
   }
 
   .info {
+    scroll-behavior: smooth;
     padding-top: 30px;
-    padding-bottom: 20px;
-    margin-top: 50px;
+    padding-bottom: 30px;
+    // margin-top: 50px;
     background: linear-gradient(
       115deg,
       rgba(0, 145, 95, 0.8) 42%,
@@ -160,7 +163,8 @@
       justify-content: space-around;
       align-items: flex-start;
 
-      .box {
+      .main-image {
+        display: block;
         width: 400px;
         height: 200px;
         background: #fff;
@@ -192,11 +196,25 @@
           background-color: #03ca9c;
           color: #fff;
         }
+        .submit:hover{
+          cursor: pointer;
+          font-weight: bold;
+        }
       }
+    }
+  }
+  .icon{
+    background-color:#ededed;
+    display: flex;
+    img{
+      padding:50px 0;
+      display: block;
+      width:200px;
     }
   }
 
   .footer {
+    height: 100px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -218,8 +236,7 @@
 //狀態--------------------------------
 
 .active {
-  border-bottom: 3px solid #03ca9c;
-  padding: 0 12px 18px 12px;
+  font-weight: bold;
 }
 
 /* animated 滾動套用 CSS 效果  預設隱藏 滑動到特定位置時才出現 */

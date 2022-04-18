@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     //height():元素的高度
     var windowHeight = $(window).height();
-    console.log(scrollPos, windowHeight);
+    // console.log(scrollPos, windowHeight);
 
     //每次滾動都把三個href值讀出來
     $(".scrollTop").each(function () {
@@ -39,11 +39,11 @@ $(document).ready(function () {
       //目標高度讀出來 outerHeight()
       //outerHeight 包含padding範圍  height 不適完整高度不包含padding
       var targetHeight = $(target).outerHeight();
-    //   console.log(target, targetPos, targetHeight);
+      // console.log(target, targetPos, targetHeight);
 
 
     //判斷 是不是在指定範圍內 有沒有滑超出範圍 滑動到對應位置選單下面出現綠色
-    if(targetPos -1 <= scrollPos && (targetPos + targetHeight) > scrollPos){
+    if(targetPos -100 <= scrollPos && (targetPos + targetHeight) > scrollPos){
         console.log(target);
         //滑動到對應位置選單下面出現綠色 一開始都先移除避免重複
         $('.scrollTop').removeClass('active');

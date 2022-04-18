@@ -214,7 +214,10 @@ table {
 }
 .wrap .header .nav .list a {
   color: #03ca9c;
-  font-weight: bold;
+}
+.wrap .header .nav .list a:hover {
+  border-bottom: 3px solid #03ca9c;
+  padding: 0 12px 18px 12px;
 }
 .wrap .header .banner {
   -webkit-box-sizing: border-box;
@@ -228,7 +231,7 @@ table {
   top: 10%;
 }
 .wrap .content {
-  margin: 20px 0;
+  padding: 50px 0;
 }
 .wrap .content .course {
   display: -webkit-box;
@@ -292,9 +295,9 @@ table {
   color: #03ca9c;
 }
 .wrap .info {
+  scroll-behavior: smooth;
   padding-top: 30px;
-  padding-bottom: 20px;
-  margin-top: 50px;
+  padding-bottom: 30px;
   background: linear-gradient(115deg, rgba(0, 145, 95, 0.8) 42%, rgba(163, 223, 47, 0.1) 100%);
 }
 .wrap .info h2 {
@@ -313,7 +316,8 @@ table {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.wrap .info .info-main .box {
+.wrap .info .info-main .main-image {
+  display: block;
   width: 400px;
   height: 200px;
   background: #fff;
@@ -346,7 +350,23 @@ table {
   background-color: #03ca9c;
   color: #fff;
 }
+.wrap .info .info-main form .submit:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.wrap .icon {
+  background-color: #ededed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrap .icon img {
+  padding: 50px 0;
+  display: block;
+  width: 200px;
+}
 .wrap .footer {
+  height: 100px;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,8 +391,7 @@ table {
 }
 
 .active {
-  border-bottom: 3px solid #03ca9c;
-  padding: 0 12px 18px 12px;
+  font-weight: bold;
 }
 
 /* animated 滾動套用 CSS 效果  預設隱藏 滑動到特定位置時才出現 */
