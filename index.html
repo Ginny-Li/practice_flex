@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex作業</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header" id="header">
+        <div class="nav">
+          <div class="icon">
+            <a href="https://zh-hk.facebook.com/"> <span class="fb">粉絲團</span> </a> <span>|</span>
+            <a href="https://twitter.com/?lang=zh-Hant">            <span class="twitter">追蹤我們</span>
+            </a>
+          </div>
+          <img src="images/logo.png" alt="" />
+          <ul class="list">
+            <li><a href="#header" class="firstlink scrollTop">首頁</a></li>
+            <li><a href="#product" class="scrollTop">產品介紹</a></li>
+            <li><a href="#contact" class="scrollTop">聯絡我們</a></li>
+          </ul>
+        </div>
+        <div class="banner">
+          <h1>六角學院 <br />讓您奠定良好的前端基礎</h1>
+        </div>
+      </div>
+      <div class="content">
+        <ul class="course animated" id="product">
+          <li class="course-item">
+            <img src="./images/html.png" alt="" />
+            <h2>Html 5 基礎教學</h2>
+            <p>
+              主流前端網站設計的基礎就在六角學院，在這裡部是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界咖發經驗，讓學員學習業界主流的開發方法。
+            </p>
+          </li>
+          <li class="course-item">
+            <img src="./images/rwd.png" alt="" />
+            <h2>響應式網站設計</h2>
+            <p>
+              響 應 式 網 站 設 計(Responsive web
+              design)，目前大多使用者均是以手機瀏覽的情況下，響應是網站已經是必備的。六角學院將會提供業界響應是開發方法，讓學生瞭解行動版開發技巧。
+            </p>
+          </li>
+          <li class="course-item">
+            <img src="./images/jQuery.png" alt="" />
+            <h2>jQuery實戰教學</h2>
+            <p>
+              本課程有以下特色 <br />
+              -瞭解變數的使用方法 <br />
+              -學習操作DOM <br />
+              -學習基本數學運算方式 <br />
+              -套件的運用及操作及運用
+            </p>
+          </li>
+        </ul>
+
+        <div class="compare">
+          <h2>線上及時體課程差異</h2>
+          <table class="animated">
+            <tr>
+              <th>項目</th>
+              <th>Hex School 線上課程</th>
+              <th>一般線上課程</th>
+              <th>實體課程</th>
+            </tr>
+            <tr>
+              <td>費用</td>
+              <td>較低</td>
+              <td>較低</td>
+              <td>較高</td>
+            </tr>
+            <tr>
+              <td>學習效果</td>
+              <td>一般</td>
+              <td>較低</td>
+              <td>很好</td>
+            </tr>
+            <tr>
+              <td>Code review</td>
+              <td>有</td>
+              <td>無</td>
+              <td>不一定</td>
+            </tr>
+            <tr>
+              <td>課程更新速度</td>
+              <td>普通</td>
+              <td>普通</td>
+              <td>較慢</td>
+            </tr>
+            <tr>
+              <td>多次複習</td>
+              <td>可</td>
+              <td>可</td>
+              <td>不可</td>
+            </tr>
+            <tr>
+              <td>字幕</td>
+              <td>有</td>
+              <td>不一定</td>
+              <td>板書</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="info" id="contact">
+        <h2>
+          對我們課程有興趣嗎? <br />
+          歡迎留下您的資料
+        </h2>
+
+        <div class="info-main animated">
+          <div class="box"></div>
+          <form action="">
+            <label for="">姓名</label>
+            <input type="text" placeholder="六角講師" />
+            <label for="">電話</label>
+            <input type="phone" placeholder="0912345678" />
+            <label for="">信箱</label>
+            <input type="email" placeholder="hexschool@mail.com" />
+            <input class="submit" type="button" value="送出" />
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="./images/footerLogo.png" alt="" />
+
+        <div class="footer-info">
+          <p>聯絡我們 : <span>hexschool@gmail.com</span></p>
+          <p>電話 : <span>0999123456</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/all.js"></script>
+  </body>
+</html>
