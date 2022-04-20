@@ -45,12 +45,14 @@ $(document).ready(function () {
     //判斷 是不是在指定範圍內 有沒有滑超出範圍 滑動到對應位置選單下面出現綠色
     if(targetPos -100 <= scrollPos && (targetPos + targetHeight) > scrollPos){
         console.log(target);
-        //滑動到對應位置選單下面出現綠色 一開始都先移除避免重複
+        //滑動到對應位置選單下面出現綠色 一開始都先移除避免重複 hover無效
         $('.scrollTop').removeClass('active');
         $(this).addClass('active');
+        $(this).css('pointer-events', 'none');
       }else{
-        //不在範圍內不加入綠色
+        //不在範圍內不加入綠色 可以使用hover
         $(this).removeClass('active');
+        $(this).removeAttr("style");
       }
 
 

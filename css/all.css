@@ -213,11 +213,13 @@ table {
       justify-content: space-around;
 }
 .wrap .header .nav .list a {
+  padding-bottom: 21px;
   color: #03ca9c;
 }
 .wrap .header .nav .list a:hover {
-  border-bottom: 3px solid #03ca9c;
-  padding: 0 12px 18px 12px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  font-weight: bold;
 }
 .wrap .header .banner {
   -webkit-box-sizing: border-box;
@@ -391,7 +393,10 @@ table {
 }
 
 .active {
-  font-weight: bold;
+  -webkit-box-shadow: 0 -3px 0 #03ca9c inset;
+          box-shadow: 0 -3px 0 #03ca9c inset;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 /* animated 滾動套用 CSS 效果  預設隱藏 滑動到特定位置時才出現 */
